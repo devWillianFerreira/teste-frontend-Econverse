@@ -10,7 +10,7 @@ header {
   flex-direction: row;
   justify-content: center;
   list-style: none;
-  border-bottom: 1px solid $line-header;
+  border-bottom: 1px solid $color-divider;
   padding: 6px 0px;
 
   li {
@@ -19,7 +19,7 @@ header {
     font-size: 12px;
     align-items: center;
     gap: 10px;
-    color: $gray-text;
+    color: $text-disabled;
   }
 
   img {
@@ -28,7 +28,7 @@ header {
   }
   strong {
     font-size: 12px;
-    color: $purple-primary;
+    color: $color-highlight;
   }
 }
 
@@ -41,7 +41,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid $line-header;
+  border-bottom: 1px solid $color-divider;
   padding: 12px 0px;
 }
 
@@ -50,13 +50,20 @@ header {
   flex-direction: row;
   gap: 91px;
   justify-content: center;
-  color: $gray-text;
+  color: $text-disabled;
   list-style: none;
 
   a {
     text-decoration: none;
-    color: $gray-text;
+    color: $text-disabled;
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+
+  a.activate {
+    color: $color-highlight;
   }
 }
 
@@ -73,10 +80,11 @@ header {
   input {
     width: 100%;
     height: 48px;
-    background-color: #f6f5f2;
+    background-color: $color-input;
     border: none;
     border-radius: 10px;
     font-size: 14px;
+    padding-left: 20px;
 
     &:focus {
       outline: none;

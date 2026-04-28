@@ -6,6 +6,8 @@ import likeIcon from "../../assets/Heart.svg";
 import ShoppingCartIcon from "../../assets/ShoppingCart.svg";
 import CrownIcon from "../../assets/CrownSimple.svg";
 import shieldIcon from "../../assets/ShieldCheck.svg";
+import truckIcon from "../../assets/Truck.svg";
+import creditCardIcon from "../../assets/CreditCard.svg";
 
 const categories: {
   name: string;
@@ -29,19 +31,19 @@ const Header = () => {
       <section>
         <ul className="header_top">
           <li>
-            <img src={shieldIcon} alt="Proteção" />
+            <img src={shieldIcon} alt="Compra 100% segura " />
             <p>
               Compra <strong>100% segura</strong>
             </p>
           </li>
           <li>
-            <img src={shieldIcon} alt="Proteção" />
+            <img src={truckIcon} alt="Frete grátis acima de R$ 200" />
             <p>
               <strong>Frete grátis</strong> acima de R$ 200
             </p>
           </li>
           <li>
-            <img src={shieldIcon} alt="Proteção" />
+            <img src={creditCardIcon} alt="Parcele suas compras" />
             <p>
               <strong>Parcele</strong> suas compras
             </p>
@@ -49,7 +51,9 @@ const Header = () => {
         </ul>
       </section>
       <section className="header_container">
-        <img className="logo" src={logo} alt="Econverse" />
+        <a href="/">
+          <img className="logo" src={logo} alt="Econverse" />
+        </a>
         <div className="input-wrapper">
           <input type="text" placeholder="O que você está buscando?..." />
           <button>
@@ -75,7 +79,10 @@ const Header = () => {
         <ul className="header_nav">
           {categories.map((category, index) => (
             <li key={index}>
-              <a href="/">{category.name}</a>
+              <a href="/" className={category.activate ? "activate" : ""}>
+                <img src={category?.icone} />
+                {category.name}
+              </a>
             </li>
           ))}
         </ul>
