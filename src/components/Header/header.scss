@@ -1,0 +1,99 @@
+@use "../../styles/variables" as *;
+
+header {
+  padding: 0 80px;
+}
+
+.header_top {
+  display: flex;
+  gap: 119px;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  border-bottom: 1px solid $line-header;
+  padding: 6px 0px;
+
+  li {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+    gap: 10px;
+    color: $gray-text;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  strong {
+    font-size: 12px;
+    color: $purple-primary;
+  }
+}
+
+.logo {
+  width: 139px;
+  height: 41.3px;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid $line-header;
+  padding: 12px 0px;
+}
+
+.header_nav {
+  display: flex;
+  flex-direction: row;
+  gap: 91px;
+  justify-content: center;
+  color: $gray-text;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    color: $gray-text;
+    font-size: 12px;
+  }
+}
+
+.header__actions {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 630px;
+
+  input {
+    width: 100%;
+    height: 48px;
+    background-color: #f6f5f2;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
