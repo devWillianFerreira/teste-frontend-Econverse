@@ -1,0 +1,37 @@
+@use "../../styles/variables" as *;
+
+.button {
+  background-color: $color-accent;
+  border-radius: 5px;
+  border: none;
+  padding: 13px 54.5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-primary;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.banner-btn {
+  padding: 12px 26.51px;
+  border-radius: 6px;
+}
+
+.news-btn {
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.item-btn {
+  padding: 14px 0px;
+  width: 100%;
+  background-color: $color-secondary;
+  color: $color-white;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
