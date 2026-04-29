@@ -1,0 +1,36 @@
+@use "../../../styles/variables" as *;
+
+.item-category {
+  cursor: pointer;
+  text-decoration: none;
+
+  img {
+    padding: 34px;
+    border-radius: 10px;
+    box-shadow: 0 4px 11px hsl(0, 0%, 0%, 13%);
+    background-color: $color-background;
+  }
+
+  figcaption {
+    margin-top: 22px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 14px;
+    color: $text-muted;
+  }
+}
+
+.ativo {
+  img {
+    background-color: $color-white;
+  }
+
+  figcaption {
+    color: $color-highlight;
+  }
+  h2 {
+    color: $color-highlight;
+  }
+}

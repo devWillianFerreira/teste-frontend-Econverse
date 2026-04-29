@@ -1,0 +1,17 @@
+@use "../../../styles/variables" as *;
+
+.categories {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+
+  ul {
+    display: flex;
+    padding: 0;
+    gap: 42px;
+  }
+
+  li {
+    list-style: none;
+  }
+}
