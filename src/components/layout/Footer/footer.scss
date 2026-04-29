@@ -1,0 +1,68 @@
+@use "../../../styles/variables" as *;
+
+.footer {
+  color: $text-secondary;
+
+  .footer_container {
+    padding-right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+
+  .social {
+    ul {
+      display: flex;
+      padding-left: 0;
+      margin: 0;
+      gap: 16px;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .logo-footer {
+    padding-bottom: 18px;
+  }
+
+  p,
+  h2 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  h2 {
+    padding-bottom: 27px;
+    max-width: 354px;
+  }
+}
+
+.top-footer {
+  display: flex;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  padding-left: 80px;
+  background-color: $color-background;
+}
+
+.links {
+  height: 198px;
+  border-left: 1px $text-secondary solid;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 90px;
+  gap: 100px;
+}
+
+.bottom-footer {
+  display: flex;
+  justify-content: center;
+
+  p {
+    padding: 13px 0px;
+  }
+}

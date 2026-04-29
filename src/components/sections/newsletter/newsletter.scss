@@ -1,0 +1,49 @@
+@use "../../../styles/variables" as *;
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-primary;
+  padding: 40px 80px;
+  color: $color-white;
+  align-items: center;
+
+  h1 {
+    font-weight: 600;
+    font-size: 32px;
+  }
+  p {
+    max-width: 510px;
+    line-height: 18px;
+    font-size: 14px;
+  }
+}
+
+.information {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 8px;
+
+  input {
+    margin: 0;
+    border: none;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 8px;
+    width: 100%;
+    color: $text-placeholder;
+    background-color: $color-white;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.check {
+  display: inline-flex;
+  gap: 4px;
+
+  p {
+    font-size: 14px;
+  }
+}
