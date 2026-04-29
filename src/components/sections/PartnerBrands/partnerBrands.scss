@@ -1,0 +1,8 @@
+@use "../../../styles/variables" as *;
+
+.partnerBrands_container {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  width: 100%;
+}

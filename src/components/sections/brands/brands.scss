@@ -1,0 +1,14 @@
+@use "../../../styles/variables" as *;
+
+.brands_container {
+  ul {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 42px;
+    margin: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
