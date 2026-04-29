@@ -1,5 +1,5 @@
 import "./heroBanner.scss";
-import heroBanner from "../../assets/images/HeroBanner.svg";
+import heroBanner from "../../../assets/images/HeroBanner.svg";
 import Button from "../../ui/Button/button";
 
 const HeroBanner = () => {

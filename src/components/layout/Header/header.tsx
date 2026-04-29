@@ -1,13 +1,13 @@
-import logo from "../../assets/icons/logo.svg";
-import searchIcon from "../../assets/icons/search-icon.svg";
-import userIcon from "../../assets/icons/UserCircle.svg";
-import boxIcon from "../../assets/icons/box.svg";
-import likeIcon from "../../assets/icons/Heart.svg";
-import ShoppingCartIcon from "../../assets/icons/ShoppingCart.svg";
-import CrownIcon from "../../assets/icons/CrownSimple.svg";
-import shieldIcon from "../../assets/icons/ShieldCheck.svg";
-import truckIcon from "../../assets/icons/Truck.svg";
-import creditCardIcon from "../../assets/icons/CreditCard.svg";
+import logo from "../../../assets/icons/logo.svg";
+import searchIcon from "../../../assets/icons/search-icon.svg";
+import userIcon from "../../../assets/icons/UserCircle.svg";
+import boxIcon from "../../../assets/icons/box.svg";
+import likeIcon from "../../../assets/icons/Heart.svg";
+import ShoppingCartIcon from "../../../assets/icons/ShoppingCart.svg";
+import CrownIcon from "../../../assets/icons/CrownSimple.svg";
+import shieldIcon from "../../../assets/icons/ShieldCheck.svg";
+import truckIcon from "../../../assets/icons/Truck.svg";
+import creditCardIcon from "../../../assets/icons/CreditCard.svg";
 
 const categories: {
   name: string;
