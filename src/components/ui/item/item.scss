@@ -1,0 +1,45 @@
+@use "../../../styles/variables" as *;
+
+.item {
+  padding: 17px 13px;
+  background-color: $color-white;
+  display: inline-flex;
+  border-radius: 10px;
+  box-shadow: 0px 3px 19px hsl(0, 0%, 0%, 22%);
+  flex-direction: column;
+
+  img {
+    padding-bottom: 9px;
+  }
+
+  h2 {
+    font-size: 15px;
+    font-weight: 300;
+    padding-bottom: 12px;
+    padding-bottom: 2px;
+  }
+
+  del {
+    font-size: 16px;
+    color: $text-light;
+    font-weight: 400;
+    text-decoration: line-through;
+    padding-bottom: 2px;
+  }
+
+  strong {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  span {
+    padding-top: 7px;
+    padding-bottom: 12px;
+    color: $color-secondary;
+    display: block;
+  }
+}

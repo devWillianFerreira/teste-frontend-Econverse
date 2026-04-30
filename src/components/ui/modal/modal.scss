@@ -1,0 +1,115 @@
+@use "../../../styles/variables" as *;
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.modal {
+  z-index: 3;
+  padding: 50px;
+  border: none;
+  border-radius: 6px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+
+  dialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+
+  figure {
+    display: flex;
+    justify-content: space-between;
+    gap: 87px;
+    align-items: center;
+
+    img {
+      width: 247px;
+    }
+  }
+
+  figcaption {
+    min-width: 328px;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 17px;
+  right: 29px;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 400;
+  color: $text-primary;
+  padding-bottom: 18px;
+}
+
+.product-price {
+  font-size: 20px;
+  color: $text-primary;
+  font-weight: 600;
+  padding-bottom: 32px;
+}
+
+.product-description {
+  font-size: 10px;
+}
+
+.details {
+  color: $color-secondary;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.buttons {
+  justify-content: space-between;
+  gap: 12px;
+  display: flex;
+}
+
+.contador {
+  max-width: 110px;
+  display: flex;
+  border: 1px solid $color-counter;
+  border-radius: 4px;
+
+  button {
+    padding: 8px 10px;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+.text-card {
+  padding-bottom: 32px;
+}
+
+.desabilitar-scroll {
+  overflow: hidden;
+  height: 100vh;
+}

@@ -1,5 +1,6 @@
 import imgBrand from "../../../assets/icons/logo.svg";
 import BrandItem from "../../ui/brandItem/brandItem";
+import Title from "../../ui/Title/title";
 import "./brands.scss";
 
 const Brands = () => {
@@ -10,7 +11,7 @@ const Brands = () => {
   });
   return (
     <section className="brands_container">
-      <h1>Navegue por marcas</h1>
+      <Title>Navegue por marcas</Title>
       <ul>
         {brands.map((item, index) => (
           <li key={index}>

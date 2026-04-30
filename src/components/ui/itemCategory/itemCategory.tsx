@@ -9,7 +9,7 @@ interface ItemCategoriaProps {
 const ItemCategory = ({ img, link, title, activate }: ItemCategoriaProps) => {
   return (
     <a href={link} className="item-category">
-      <figure className={`${activate ? "ativo" : ""}`}>
+      <figure className={`${activate ? "activate" : ""}`}>
         <img src={img} alt={title} />
         <figcaption>
           <h2>{title}</h2>

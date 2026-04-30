@@ -1,0 +1,28 @@
+@use "../../../styles/variables" as *;
+
+.item-filter {
+  padding: 12px 58px;
+  border-right: 1px solid $color-border-strong;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  a {
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: $color-filter-item;
+  }
+}
+
+.activate {
+  p {
+    color: $color-highlight;
+    font-weight: bold;
+  }
+}

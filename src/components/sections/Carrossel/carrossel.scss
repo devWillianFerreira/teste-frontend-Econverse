@@ -1,0 +1,35 @@
+@use "../../../styles/variables" as *;
+
+.carrossel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+
+  ul {
+    gap: 18px;
+    margin: 0px 15px;
+    list-style: none;
+  }
+}
+
+.carrossel-btn {
+  height: 32px;
+  width: 32px;
+  background-color: $color-white;
+  border-radius: 25px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px hsl(0, 0%, 0%, 25%);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid $color-border-strong;
+  margin: 0px 80px;
+}

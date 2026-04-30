@@ -1,0 +1,47 @@
+@use "../../../styles/variables" as *;
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0px 150px;
+
+  h1 {
+    color: $color-secondary;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background-color: $color-white;
+    padding: 0px 34px;
+    padding-bottom: 4px;
+  }
+
+  a {
+    font-size: 15px;
+    color: $text-primary;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.line {
+  border-top: 1px solid $color-border;
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  z-index: 0;
+}
+
+.line-solo {
+  top: 30%;
+}
+
+.padding-small {
+  padding-bottom: 24px;
+}
+
+.padding-big {
+  padding-bottom: 32px;
+}
